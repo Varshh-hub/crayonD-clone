@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crayon'd | Scaling Product Engineering for Startups on a Budget</title>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" rel="stylesheet"/>
+<link href="images/header_images-removebg-preview.png" rel="icon" type="image/png"/>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="images/header_images-removebg-preview.png" rel="icon" type="image/png"/>
+</head>
+<body>
+<header class="nav-up">
+<nav class="navbar bg-body-white">
+<div class="container-fluid">
+<div class="row w-100 align-items-center">
+<div class="col-12 col-md-4 text-center text-md-middle">
+<a class="navbar-brand d-inline-block ms-md-5" href="https://www.crayond.com/">
+<img alt="Company Logo" class="img-fluid" src="images/logo-crayond_2x-removebg-preview.png" style="max-height: 33px; margin-left:52px;"/>
+</a>
+</div>
+<div class="col-12 col-md-4 d-none d-md-flex justify-content-center">
+<ul class="navbar-nav flex-row gap-5">
+<li class="nav-item">
+<a class="nav-link small-text" href="#">Fixed Bid</a>
+</li>
+<li class="nav-item">
+<a class="nav-link small-text" href="#">Who We Are</a>
+</li>
+<li class="nav-item">
+<a class="nav-link small-text" href="#">Resources</a>
+</li>
+<li class="nav-item">
+<a class="nav-link small-text" href="#">Contact</a>
+</li>
+</ul>
+</div>
+<div class="col-12 col-md-3 d-none d-md-flex justify-content-end me-md-4">
+<button class="btn btn-outline-primary-btn-lg small-text fw-bold custom-hover text-wrap" type="button">
+            schedule a call
+          </button>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<style>
+      .text-wrap { white-space: normal; }
+      button.btn { background-color: #6c64e0 !important; border-color: #6c64e0 !important; color: white !important; }
+      button.btn:hover { background-color: white !important; color: #6c64e0 !important; }
+
+  button.custom-hover {
+  text-transform: none !important;
+}
+
+  .small-text {
+    font-size: 17px;
+    font-weight: 550;
+  }
+
+  .custom-hover {
+    color: #6c64e0;
+    border-color: #6c64e0;
+    background-color: transparent;
+  }
+
+  .custom-hover:hover {
+    background-color: #6c64e0;
+    color: white;
+  }
+  .nav-link:hover{
+    color: #6c64e0;
+  }
+  span{
+    display: inline-block;
+    line-height: 1.2;
+  }
+  .custom-view{
+    color: white;
+    border-color: #6c64e0;
+    background-color: #6c64e0;
+  }
+  /* y */
+  .brands_logos {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 25px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem; 
+  }
+  p.lead {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.25rem; 
+  }
+  p.lead {
+    font-size: 0.9rem; 
+  }
+}
+
+.offering_products {
+  padding: 1.25rem 0;
+  margin-bottom: 10px;
+}
+
+.offering_products .card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px;
+  margin-bottom: 24px;
+}
+
+.offering_products .card_container .card {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 28px 40px 40px 40px;
+  min-width: 352px;
+  max-width: 352px;
+  position: relative;
+}
+
+.offering_products .card_container .card::after,
+.offering_products .card_container .card::before {
+  content: "";
+  background-color: #fff;
+  padding: 12px;
+  position: absolute;
+  top: 11%;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.offering_products .card_container .card::after {
+  left: -12px;
+}
+
+.offering_products .card_container .card::before {
+  right: -12px;
+}
+
+.offering_products .card_container .card .card_icon {
+  width: 24px;
+  height: 34px;
+  margin-bottom: 12px;
+}
+
+.offering_products .card_container .card .card_title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+}
+
+.offering_products .card_container .card p {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #43434b;
+}
+  .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    padding: 1rem 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-button::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='feather feather-chevron-down' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-body {
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #fff;
+  }
+
+  footer span {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+.custom-btn {
+      background-color: #6c64e0;
+      border-color: #6c64e0;
+      color: white;
+      height: 60px;
+      width: 210px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover effect */
+    .custom-btn:hover {
+      background-color: white;
+      color: #6c64e0;
+    }
+
+    .custom-btn.clicked {
+      background-color: white !important;
+      color: #6c64e0 !important;
+      border-color: #6c64e0 !important;
+    }
+
+</style>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="col-12 ms-4 text-center">
+<h1 style="font-weight: bold; line-height: 1.5;">
+    We help startups and enterprises build products <br/>
+    that are 
+    <span style="background-color: #E0E4FA">usable</span>,
+    <span style="background-color: #FFF3E4; padding: 2px 4px;">blazing fast</span>, 
+    <span style="background-color: #FAE5EF; padding: 2px 4px;">bug-free</span>, <br/>
+<span style="background-color: #E5FBF3; padding: 2px 4px;">secure</span> and 
+    <span style="background-color: #f5e5fb; padding: 2px 4px;">scalable</span>
+</h1>
+<br/>
+<h3 class="fw-bold display-6" style="font-size: 1.5rem;font-family: 'Alilato Arabic Bold'; ">Product engineering, done right. 100% risk-free, expert results guaranteed.</h3>
+<br/>
+</div>
+<div>
+<div class="container-fluid d-none d-md-block" style="background-image: url('images/crayons image.jpg'); 
+            background-repeat: no-repeat; 
+            background-position: top; 
+            background-size: contain; 
+            height: 350px;">
+<ul class="list-unstyled d-flex flex-column flex-md-row justify-content-center align-items-center mt-5">
+<li>
+<button class="btn btn-primary btn-lg m-2" style="background-color: #6c64e0; border-color: #6c64e0; height: 60px; width: 210px;" type="button">
+        VIEW PLAN
+      </button>
+</li>
+<li>
+<button class="btn btn-lg m-2" 
+  onmouseout="this.style.backgroundColor='transparent'; this.style.color='#6c64e0';" 
+  onmouseover="this.style.backgroundColor='#6c64e0'; this.style.color='white';" 
+  style="color: #6c64e0; border: 1px solid #6c64e0; background-color: transparent; height: 60px; width: 210px;" 
+  type="button">
+  <b><span style="white-space: nowrap;">SCHEDULE A CALL</span></b>
+</button>
+</li>
+</ul>
+</div>
+<div class="container-fluid d-block d-md-none">
+<ul class="list-unstyled mt-4">
+<li class="d-flex flex-column align-items-center gap-2">
+<button class="btn btn-primary btn-lg m-2" style="background-color: #6c64e0; border-color: #6c64e0; height: 60px; width: 210px;" type="button">
+        VIEW PLAN
+      </button>
+<button class="btn btn-lg m-2" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#6c64e0';" onmouseover="this.style.backgroundColor='#6c64e0'; this.style.color='white';" style="color: #6c64e0; border: 1px solid #6c64e0; background-color: transparent; height: 60px; width: 210px;" type="button">
+<b>SCHEDULE A CALL</b>
+</button>
+</li>
+</ul>
+<div class="text-center mt-4">
+<img class="img-fluid" src="images/crayons image.jpg" style="max-width: 100%; height: auto;"/>
+</div>
+</div>
+<div class="container text-center my-4 d-flex flex-column flex-md-row align-items-center justify-content-center gap-3" style="margin-top: 200px;">
+<img alt="10 Years" height="35" src="images/unbea10.png"/>
+<h5 class="mb-0">Celebrating 10 years of product excellence. Super happy for the love and trust from everyone.</h5>
+</div>
+</div>
+<img alt="brands" class="full-width-img" src="images/brands.jpeg"/>
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+    }
+    .full-width-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+</style>
+<section class="text-white py-5 text-center position-relative" style="background-color: #28243c;">
+<div>
+<h2 class="fs-2">
+  Don't let the challenges of building a product team slow you down.
+  <br/>
+  Let us help you achieve your goals
+</h2>
+<p class="lead fs-5">
+  Here's a new way to build good products.
+</p>
+<img alt="Image" class="img-fluid mt-3 d-block mx-auto d-none d-lg-block" src="images/Second_Section _Image_Web.png"/>
+<img alt="Image" class="img-fluid mt-3 d-block mx-auto d-lg-none" src="images/Second_Section_Image_Mobile.png"/>
+<img alt="leftDot" class="position-absolute d-none d-sm-block" src="images/leftDoted.svg" style="width:158px;height:41px;top:25%;left:-75px;"/>
+<img alt="rightDot" class="position-absolute d-none d-sm-block" src="images/rightDoted.svg" style="width:158px;height:41px;bottom:6%;right:-78px;"/>
+</div>
+</section>
+<div class="offering_products">
+<div class="container-fluid">
+<h1 class="mt-5" style="text-align: center; font-size: 40px;color: black;">our offerings</h1>
+<h2 style="text-align: center;font-size: 21px;color: #0c011a;margin-top: 10px;">From idea/problem solving to launch,we get you covered with our offerings</h2>
+</div>
+<div class="card_container">
+<div class="card" data-aos="zoom-in" style="background-color: #E5FBF3;">
+<img alt="" class="card_icon" src="images/1.svg"/>
+<h4 class="card_title">UI/UX</h4>
+<p>Craft your idea into a delightful product experience to solve your user problems with our expert
+                    product and UI/UX design team.</p>
+</div>
+<div class="card" data-aos="zoom-in" style="background-color: #FFF3E4;">
+<img alt="" class="card_icon" src="images/2.svg"/>
+<h4 class="card_title">Full-stack development</h4>
+<p>Launch your idea into a world-class product or modernize legacy systems through front-end,
+                    back-end engineering and DevOps.</p>
+</div>
+<div class="card" data-aos="zoom-in" style="background-color: #F5E5FB;">
+<img alt="" class="card_icon" src="images/3.svg"/>
+<h4 class="card_title">Front-end development</h4>
+<p>We help you build beautiful + usable interfaces on web / mobile and integrate them with your APIs
+                    through front-end engineering.</p>
+</div>
+</div>
+</div>
+<style>
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+    </script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<section class="py-5 bg-light" style="background-color : #f9f9fd;">
+<div class="container text-center">
+<h2>Benefits you'll love</h2>
+<p class="mb-5">And moreover, comfortably repeatable</p>
+<div class="row g-4">
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 h-100">
+<img class="card_icon d-block ms-0 me-lg-5" src="images/happyIcon.svg" style="height: 30px;"/>
+<h4 class="mt-3 text-start">Affordable</h4>
+<p class="text-start">High-quality product engineering services that fit your budget, without compromise.</p>
+</div>
+</div>
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 h-100">
+<img class="card_icon d-block ms-0 me-lg-5" src="images/winkIcon.svg" style="height: 30px;"/>
+<h4 class="mt-3 text-start">Risk-free</h4>
+<p class="text-start">Zero risks with flexible engagement and payment terms. Pay only for what you need.</p>
+</div>
+</div>
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 h-100">
+<img class="card_icon d-block ms-0 me-lg-5" src="images/winkIcon.svg" style="height: 30px;"/>
+<h4 class="mt-3 text-start">Flexible</h4>
+<p class="text-start">Scale your engineering needs up or down based on your product requirements.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="container-fluid py-3" style="background-color : #f9f9fd">
+<marquee behavior="scroll" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="6">
+<div class="d-inline-flex gap-3">
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Modern engineering</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Delightful experience</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Faster to the market</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Truly built for customers</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Full ownership of actions</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Bug-free delivery</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Best of standards</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Automated assessments</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Minimal tech debt</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Frameworks to SaaSify</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Completely agile</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Secure and scalable</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Idea to product</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Matured deliveryops</div>
+<div class="badge rounded-pill bg-secondary-subtle text-dark py-2 px-4">Collaborative and as one team</div>
+</div>
+</marquee>
+</div>
+<div class="container-fluid pt-5" style="background-color:#28243c;">
+<h1 class="text-center text-white">Value based plans</h1>
+<h2 class="text-center" style="font-size: 22px; color:#bebaba;">Transparent and outcome driven so guess on what is going to cost</h2>
+<div class="primary_btn" id="primary_btn">
+<div class="btn" onclick="toggleActive(this)">
+<h4>Idea to design</h4>
+<p style="font-size: 12px;">Turn your vision into a prototype with our expert product design team</p>
+</div>
+<div class="btn" onclick="toggleActive(this)">
+<h4>Design to Build</h4>
+<p style="font-size: 12px;">Turn your prototype into a functional end product with our skilled engineering team</p>
+</div>
+</div>
+</div>
+<div class="container-fluid pt-5" style="background-color:#f5faff;">
+  <h1 class="text-center" style="color:#28243c;">Slide through the hours to select the monthly plan that best suits your development needs</h1>
+  <h2 class="text-center mb-4" style="font-size: 18px; color:#5a5a5a;">Hours</h2>
+
+  <!-- Hours Slider -->
+  <div class="d-flex justify-content-center">
+    <input type="range" class="form-range w-50" min="160" max="1280" step="160" value="320" id="hoursRange" oninput="updatePlan(this.value)">
+  </div>
+  <div class="text-center mt-2 mb-4" id="hourValues">
+    <span class="mx-3">160</span>
+    <span class="mx-3 fw-bold text-primary" id="activeHour">320</span>
+    <span class="mx-3">640</span>
+    <span class="mx-3">960</span>
+    <span class="mx-3">1280</span>
+  </div>
+
+  <!-- Plan Details -->
+  <div class="row px-5">
+    <!-- Plan Box -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm" style="border-color: #c5c6ff;">
+        <h5 class="fw-bold" style="color:#f0b400;" id="planName">Lean</h5>
+        <p id="planDesc">Ideal for designing MVPs, POCs, modules and features</p>
+        <h6 class="fw-bold" id="devHours">320 dev hours / month</h6>
+        <p class="mb-1" id="storyPoints">64 Story points</p>
+        <p class="mb-1" id="engineers">2 Engineer(s)</p>
+        <p class="mb-3" id="prodOps">+ 0.3 ProdOps</p>
+        <a href="#" class="btn btn-primary">UNLOCK PRICING</a>
+      </div>
+    </div>
+
+    <!-- Plan Includes -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm bg-white">
+        <h5 class="fw-bold">Plan includes:</h5>
+        <ul class="list-unstyled mt-3">
+          <li>✔ Dedicated account manager</li>
+          <li>✔ Full-stack development</li>
+          <li>✔ Technical analysis</li>
+          <li>✔ Product development artifacts</li>
+          <li>✔ Project management</li>
+          <li>✔ Quality assurance</li>
+          <li>✔ Clean code and best practices</li>
+          <li>✔ VAPT report</li>
+          <li>✔ Performance report</li>
+          <li>✔ DevOps support</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Terms -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm bg-white">
+        <h5 class="fw-bold">Terms:</h5>
+        <ul class="list-unstyled mt-3">
+          <li>✔ Minimum 2 months commitment</li>
+          <li>✔ 1-month notice period</li>
+          <li>✔ 20% one-time engagement fee</li>
+        </ul>
+        <div class="mt-3 p-3 rounded" style="background-color: #fff8e5;">
+          <p class="mb-1">⭐ Your IP is only yours.</p>
+          <p class="mb-1">⭐ Accelerate your product vision with pre-built frameworks.</p>
+          <p class="mb-0">⭐ Discounts: 5% quarterly, 10% half-yearly, 20% yearly</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const planData = {
+    160: {
+      name: "Prototype",
+      desc: "For initial exploration and design trials",
+      hours: "160 dev hours / month",
+      points: "32 Story points",
+      engineers: "1 Engineer(s)",
+      prodOps: "+ 0.2 ProdOps"
+    },
+    320: {
+      name: "Lean",
+      desc: "Ideal for designing MVPs, POCs, modules and features",
+      hours: "320 dev hours / month",
+      points: "64 Story points",
+      engineers: "2 Engineer(s)",
+      prodOps: "+ 0.3 ProdOps"
+    },
+    640: {
+      name: "Grow",
+      desc: "For scaling your core product with more features",
+      hours: "640 dev hours / month",
+      points: "128 Story points",
+      engineers: "4 Engineer(s)",
+      prodOps: "+ 0.5 ProdOps"
+    },
+    960: {
+      name: "Scale",
+      desc: "Extend your team and rapidly build product pipelines",
+      hours: "960 dev hours / month",
+      points: "192 Story points",
+      engineers: "6 Engineer(s)",
+      prodOps: "+ 0.7 ProdOps"
+    },
+    1280: {
+      name: "Scale+",
+      desc: "High-velocity execution for growth-stage startups",
+      hours: "1280 dev hours / month",
+      points: "256 Story points",
+      engineers: "8 Engineer(s)",
+      prodOps: "+ 1 ProdOps"
+    }
+  };
+
+  function updatePlan(value) {
+    const activeHour = document.getElementById("activeHour");
+    activeHour.textContent = value;
+
+    const plan = planData[value];
+
+    document.getElementById("planName").textContent = plan.name;
+    document.getElementById("planDesc").textContent = plan.desc;
+    document.getElementById("devHours").textContent = plan.hours;
+    document.getElementById("storyPoints").textContent = plan.points;
+    document.getElementById("engineers").textContent = plan.engineers;
+    document.getElementById("prodOps").textContent = plan.prodOps;
+  }
+
+  // Initial set
+  updatePlan(320);
+</script>
+
+<section class="addons-section py-5 text-center" style="background-color: #EBF7F6;">
+<div class="container">
+<h4 class="fw-bold mb-4">
+      Add toppings to enhance your product lifecycle with our invaluable 
+      <span class="text-primary text-decoration-underline">add-ons</span>
+</h4>
+<div class="row justify-content-center">
+<div class="col-md-10">
+<ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+<li>• Roadmap grooming (Product)</li>
+<li>• Product management (Product)</li>
+<li>
+            • Product research (Product)
+            <span class="badge bg-danger text-white ms-2">RECOMMENDED</span>
+</li>
+<li>• System design (Engineering)</li>
+<li>
+            • Technical architecture and solution (Engineering)
+           
+          </li>
+<li>• BDD test automation (QA)</li>
+</ul>
+</div>
+</div>
+</div>
+
+</section>
+<section class="fixed-bid-section py-5 text-white bg-dark position-relative">
+<div class="container position-relative z-1">
+<div class="row align-items-center">
+<div class="col-md-8">
+<h2 class="fw-bold mb-3">Looking for a fixed-bid model to work with?</h2>
+<p class="mb-4">We have executed several large fixed-bid projects, we’d love to talk.</p>
+<h6 class="mb-3" style="color: rgb(253, 251, 251);">Our fixed-bid engagement models</h6>
+<div class="d-flex gap-3">
+<button class="btn btn-outline-light rounded-pill px-4">Cash only</button>
+<button class="btn btn-outline-light rounded-pill px-4">Cash + equity</button>
+</div>
+</div>
+<div class="col-md-4 text-end">
+<a class="btn btn-light text-primary fw-bold rounded-pill px-4 py-2 shadow-sm" href="#">
+          VIEW DETAILS <i class="bi bi-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 end-0 w-100 h-100" style="background: url('assets/images/fixed-bid-bg.svg') no-repeat right bottom; background-size: contain; z-index: 0;"></div>
+</section>
+<section class="py-5 text-center">
+<div class="container">
+<h2 class="fw-bold mb-2">Know our process and how we deliver</h2>
+<p class="text-muted mb-4">
+      From start to finish, we keep you informed with stage-wise updates.
+    </p>
+<div class="d-inline-flex mb-5">
+<button class="btn btn-primary me-1">Idea to design</button>
+<button class="btn btn-outline-primary">Design to build</button>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">01</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">Get to know the business<br/>problem, product &amp; scope</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">02</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We convert the problem<br/>statements into user stories</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">03</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We produce wireframes<br/>for those stories</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">04</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We collaborate with you<br/>to be on the same page</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">05</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We create the estimates<br/>for full-fledged design</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">06</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We seek your approval on<br/>the estimates and go ahead</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">07</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">Our experts turn stories<br/>into design prototype</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="border rounded-3 p-3 h-100">
+<div class="d-flex align-items-start">
+<div class="me-2">
+<span class="fs-4 fw-bold text-secondary">08</span>
+</div>
+<div class="text-start">
+<p class="mb-1 text-muted" style="font-size: 1rem;">We iterate with you to<br/>freeze the design</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style="background-color: #EBF7F6;">
+<div class="container">
+<div class="p-4 rounded shadow-sm mx-auto" style="max-width: 1100px;">
+<h2 class="text-center mb-3">Here are the facts</h2>
+<p class="text-center text-muted mb-4">
+      When you want reliability and outcomes, choose us. You will love us just like our customers.
+    </p>
+<div class="table-responsive">
+<table class="table table-bordered align-middle mb-0">
+<thead class="table-light">
+<tr>
+<th></th>
+<th>Standard development agencies</th>
+<th>In-house</th>
+<th>Crayon\'d ✨</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value for the money</td>
+<td>💰💰 Risky</td>
+<td>💰 Risky</td>
+<td>🛡 Risk-free + value driven</td>
+</tr>
+<tr>
+<td>Knowledge capital (Ideation + design + dev + scrum)</td>
+<td>🧘 Minimal</td>
+<td>🧘 Minimal</td>
+<td>✅ Very high</td>
+</tr>
+<tr>
+<td>Truly agile</td>
+<td>🧘 Partially</td>
+<td>🧘 Partially</td>
+<td>✅ Assured</td>
+</tr>
+<tr>
+<td>Experience in shipping successful products</td>
+<td>🧘 Maybe</td>
+<td>🧘 Maybe</td>
+<td>🚀 Solid case studies</td>
+</tr>
+<tr>
+<td>Crafting delightful product experiences</td>
+<td>📉 Mediocre results</td>
+<td>📈 Good results</td>
+<td>❤️ Crafted with love</td>
+</tr>
+<tr>
+<td>Accelerate product vision with pre-built frameworks</td>
+<td>❌ No shortcuts</td>
+<td>❌ No shortcuts</td>
+<td>🔥 Powerful frameworks</td>
+</tr>
+<tr>
+<td>Smooth delivery-ops throughout product life cycle</td>
+<td>⚖️ A mixed bag</td>
+<td>⚖️ A mixed bag</td>
+<td>🔶 Matured delivery-ops</td>
+</tr>
+<tr>
+<td>Cost-effective scaled product engineering</td>
+<td>💸💸💸 Expensive and inefficient</td>
+<td>💸 Expensive and inefficient</td>
+<td>💡 Scalable and efficient</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="text-center mt-4 p-3 bg-dark text-white rounded">
+<p class="mb-3">We're just a step away to collaborate &amp; ship great product experience for you.</p>
+<a class="btn btn-light fw-bold" href="#">GET STARTED</a>
+</div>
+</div>
+</div>
+
+<section class="py-5 text-white" style="background-color: #242438;">
+<div class="container text-center">
+<h2 class="fw-bold mb-3">Our journey so far</h2>
+<p class="lead text-white fw-bold mb-4">
+  We have helped startups and enterprises build successful products.
+</p>
+<div class="d-flex justify-content-center">
+<div class="col-6 border border-dark p-3">
+<div class="row text-warning fw-bold text-center">
+<div class="col-6 col-md-3 mb-3">
+<h3 class="display-7"><b>120+</b></h3>
+<p class="text-uppercase text-white-50 mb-0">Products</p>
+</div>
+<div class="col-6 col-md-3 mb-3">
+<h3 class="display-7"><b>30+</b></h3>
+<p class="text-uppercase text-white-50 mb-0">MVPs</p>
+</div>
+<div class="col-6 col-md-3 mb-3">
+<h3 class="display-7"><b>10000+   </b></h3>
+<p class="text-uppercase text-white-50 mb-0">Feature</p>
+</div>
+<div class="col-6 col-md-3 mb-3">
+<h3 class="display-7"><b>12+</b></h3>
+<p class="text-uppercase text-white-50 mb-0">Domains</p>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section class="py-5 bg-light">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="fw-bold">Hear from our delighted customers</h2>
+<p class="text-muted fs-5">Strong relationships, big product ambitions.</p>
+</div>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card border-0 shadow-sm testimonial-card">
+<div class="container-fluid">
+<div class="row">
+<div class="col-8">
+
+</div>
+</div>
+</div>
+<div class="card-body">
+<div class="quote-icon">“</div>
+<p class="card-text">
+              Words aren't enough to describe the way Crayon's empathizes and works on making your dream come true. They are a boon to startups.
+            </p>
+<div class="d-flex align-items-center mt-4">
+<img alt="Balaji Ramaswami" class="rounded-circle avatar me-3" src="Emtax-Ceo-Balaji.png"/>
+<div>
+<h6 class="mb-0 fw-bold">Balaji Ramaswami</h6>
+<small class="text-muted">CEO, Emtax</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card border-0 shadow-sm testimonial-card">
+<div class="quote-icon">“</div>
+<div class="card-body">
+<p class="card-text">
+              Crayon'd has been a reliable and skilled partner in our product journey. Their overall product engineering capabilities and agility were critical to our success.
+            </p>
+<div class="d-flex align-items-center mt-4">
+<img alt="Sheriff Ismail" class="rounded-circle avatar me-3" src="Pa-Ceo- Sheriff.png"/>
+<div>
+<h6 class="mb-0 fw-bold">Sheriff Ismail</h6>
+<small class="text-muted">CTO, Dynamic Netsoft</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card border-0 shadow-sm testimonial-card">
+<div class="quote-icon">“</div>
+<div class="card-body">
+<p class="card-text">
+              The team at Crayon'd has shown great resolve and has been exceptional in challenging circumstances. They've always gone over and beyond in the deliverables.
+            </p>
+<div class="d-flex align-items-center mt-4">
+<img alt="Mahesh Ramakrishnan" class="rounded-circle avatar me-3" src="TCare-Mahesh.png"/>
+<div>
+<h6 class="mb-0 fw-bold">Mahesh Ramakrishnan</h6>
+<small class="text-muted">CTO, AINQA</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section></link></body>
+</html>
+<style>
+#primary_btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 480px;
+  padding: 0px;
+  height: 120px;
+}
+
+.primary_btn .btn {
+  background-color: white;
+  color: black;            
+  border-radius: 8px 8px 0 0;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-style: solid;
+  border-width: 1px 1px 0 1px; 
+  border-color: #6c64e0;
+}
+
+
+
+.primary_btn .btn.active {
+  background-color:  #6c64e0;
+  color: white;
+}
+</style>
+<script>
+  function toggleActive(clickedBtn) {
+  const container = document.getElementById('primary_btn');
+  const buttons = container.querySelectorAll('.btn');
+  
+  buttons.forEach(btn => {
+    if (btn === clickedBtn) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+</script>
+
+<div class="image-container">
+  <img src="designs.jpeg" alt="designs">
+</div>
+
+
+<style>
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+</style>
+<div class="container py-5">
+<h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+<div class="row gy-4">
+<div class="col-12 col-md-6">
+<div class="accordion" id="accordionLeft">
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingOne">
+<button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+              Can we sign an NDA?
+            </button>
+</h2>
+<div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft" id="collapseOne">
+<div class="accordion-body">
+              Yes, that would be the first step. We value your trust, business, and ideas. Your sensitive information will be handled with utmost confidentiality as we partner in your success.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingTwo">
+<button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+              Do you offer any guarantees?
+            </button>
+</h2>
+<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionLeft" id="collapseTwo">
+<div class="accordion-body">
+              We offer satisfaction guarantees based on milestones and quality agreements.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingThree">
+<button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+              Do you provide support services after the product development completes?
+            </button>
+</h2>
+<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionLeft" id="collapseThree">
+<div class="accordion-body">
+              Yes, we provide post-launch support and maintenance packages tailored to your needs.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingFour">
+<button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+              Can you work across different time zones?
+            </button>
+</h2>
+<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionLeft" id="collapseFour">
+<div class="accordion-body">
+              Absolutely, we have experience collaborating with clients globally.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingFive">
+<button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+              Do you have experience working with in-house dev or design teams?
+            </button>
+</h2>
+<div aria-labelledby="headingFive" class="accordion-collapse collapse" data-bs-parent="#accordionLeft" id="collapseFive">
+<div class="accordion-body">
+              Yes, we often collaborate with in-house teams to extend capabilities and scale delivery.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingSix">
+<button aria-controls="collapseSix" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseSix" data-bs-toggle="collapse" type="button">
+              Do you employ freelancers?
+            </button>
+</h2>
+<div aria-labelledby="headingSix" class="accordion-collapse collapse" data-bs-parent="#accordionLeft" id="collapseSix">
+<div class="accordion-body">
+              We rely on a dedicated full-time team to ensure quality, consistency, and accountability.
+            </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="accordion" id="accordionRight">
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingSeven">
+<button aria-controls="collapseSeven" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
+              How do you certify the quality of features built?
+            </button>
+</h2>
+<div aria-labelledby="headingSeven" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseSeven">
+<div class="accordion-body">
+              Our QA process includes manual testing, automated testing, and client approval checkpoints.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingEight">
+<button aria-controls="collapseEight" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseEight" data-bs-toggle="collapse" type="button">
+              What do you refer to as pre-built frameworks?
+            </button>
+</h2>
+<div aria-labelledby="headingEight" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseEight">
+<div class="accordion-body">
+              Reusable libraries and templates that accelerate development without compromising quality.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingNine">
+<button aria-controls="collapseNine" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNine" data-bs-toggle="collapse" type="button">
+              Who owns the code and IP?
+            </button>
+</h2>
+<div aria-labelledby="headingNine" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseNine">
+<div class="accordion-body">
+              You own 100% of the code and intellectual property once the project is completed and paid for.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingTen">
+<button aria-controls="collapseTen" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTen" data-bs-toggle="collapse" type="button">
+              What industries do you offer?
+            </button>
+</h2>
+<div aria-labelledby="headingTen" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseTen">
+<div class="accordion-body">
+              We serve industries including healthcare, fintech, e-commerce, education, and more.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingEleven">
+<button aria-controls="collapseEleven" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseEleven" data-bs-toggle="collapse" type="button">
+              What communication and project management tools do you use?
+            </button>
+</h2>
+<div aria-labelledby="headingEleven" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseEleven">
+<div class="accordion-body">
+              We use Slack, Jira, Trello, Asana, and Zoom depending on client preferences.
+            </div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingTwelve">
+<button aria-controls="collapseTwelve" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwelve" data-bs-toggle="collapse" type="button">
+              Where are your company and team located?
+            </button>
+</h2>
+<div aria-labelledby="headingTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionRight" id="collapseTwelve">
+<div class="accordion-body">
+              Our headquarters is located in [Your Location], with distributed teams worldwide.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row gy-4">
+<div class="col-lg-4 text-center text-lg-start">
+<h4 class="fw-bold mb-3">Ready to make<br>something amazing?</br></h4>
+<button class="btn btn-lg m-2 custom-btn" id="toggleBtn" type="button">
+    GET STARTED
+  </button>
+<script>
+    const button = document.getElementById('toggleBtn');
+
+    button.addEventListener('click', function () {
+      button.classList.toggle('clicked');
+    });
+  </script>
+<script>
+  const btn = document.getElementById("startBtn");
+
+  btn.addEventListener("click", () => {
+    btn.style.backgroundColor = "white";
+    btn.style.color = "#6c64e0";
+    btn.style.borderColor = "#6c64e0";
+  });
+</script>
+<div class="mb-3">
+<img alt="CrayonD Badge" class="img-fluid" src="images/unbea10.png" style="max-width: 180px;">
+</img></div>
+<p class="small text-muted mb-1">© Crayond Digital Pvt. Ltd.</p>
+<p class="small text-muted">All rights reserved</p>
+<div class="d-flex justify-content-center justify-content-lg-start gap-3">
+<a class="text-muted fs-5" href="https://www.linkedin.com/company/crayond/"><i class="bi bi-linkedin"></i></a>
+<a class="text-muted fs-5" href="https://www.facebook.com/CrayonDigital/"><i class="bi bi-facebook"></i></a>
+<a class="text-muted fs-5" href="https://www.instagram.com/crayondofficial/"><i class="bi bi-instagram"></i></a>
+<a class="text-muted fs-5" href="https://twitter.com/crayondofficial"><i class="bi bi-twitter"></i></a>
+</div>
+</div>
+<div class="col-6 col-md-4 col-lg-2">
+<h6 class="fw-semibold mb-3">Company</h6>
+<ul class="list-unstyled">
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Fixed Bid</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Who We Are</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-lg-3">
+<h6 class="fw-semibold mb-3">Resources</h6>
+<ul class="list-unstyled">
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">For Accelerators &amp; Investors</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Blog</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Glossary</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">SaaS Metrics</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4 col-lg-3">
+<h6 class="fw-semibold mb-3">Ultimate Guides</h6>
+<ul class="list-unstyled">
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Design Sprint</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Aha Moment</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Cost To Build a SaaS Product</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">Product Development</a></li>
+<li class="mb-3"><a class="text-muted text-decoration-none" href="#">SaaS Framework</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-light text-dark py-3 border-top">
+<div class="container">
+<div class="row gy-3 text-center text-md-start justify-content-between align-items-center">
+<div class="col-md-auto d-flex justify-content-center justify-content-md-start gap-3">
+<a class="text-dark text-decoration-none" href="#">Privacy</a>
+<span>|</span>
+<a class="text-dark text-decoration-none" href="#">GDPR</a>
+</div>
+<div class="col-md-auto d-flex justify-content-center justify-content-md-start gap-3">
+<span>hello@crayond.com</span>
+<span>|</span>
+<span>+(91) 74483 90100</span>
+</div>
+<div class="col-12 col-md text-center text-md-end small">
+        2/498, Ayshika, Sunrise Avenue 2nd Cross Street,<br>
+        Neelankarai, Chennai, India
+      </br></div>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
